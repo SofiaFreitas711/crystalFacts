@@ -7,16 +7,16 @@
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
-<body style='margin : 0px; overflow: hidden;'>
+<body>
     <a-scene embedded arjs>
         <!-- Bola de cristal -->
             <a-sphere
-            position="0 0 -10"
-            radius="1.2"
+            position="0 2 -10"
+            radius="2"
             opacity="0.8"
-            metalness="0.5"
+            metalness="0.8"
             material="src:texture.svg; color:white"
-            animation="property: position; dir: alternate;to: 0 0.1 -10; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
+            animation="property: position; dir: alternate;to: 0 2.1 -10; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
             <!-- <a-entity 
             geometry="primitive: torus; radius: 1; radiusTubular: 2.5; arc: 180"
             position="0 0 -10"
