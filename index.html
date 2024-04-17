@@ -10,58 +10,65 @@
 </head>
 <body>
     <a-scene embedded arjs>
-        <a-marker-camera preset="hiro">
+        <a-marker-camera  preset="hiro">
             <!-- Bola de cristal -->
             <a-sphere
             position="0 0 -10"
+            rotation="0 -45 0"
             radius="1.2"
             opacity="0.8"
             metalness="0.8"
-            material="src:texture.svg; color:white"
-            animation="property: position; dir: alternate;to: 0 1.1 -10; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
+            material="src:assets/text3.png;color:white"
+            animation="property: position; dir: alternate;to: 0 0.2 -10; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
+            
             <!-- Brilhos -->
-            <a-sphere
+            <!-- animation="property: position; dir: alternate;to: -1.1 0.5 -10; dur: 2000; easing: easeInOutSine; loop: true" -->
+            <!-- "Sparkle Emoji 3D" (https://skfb.ly/oROzE) by Azterisk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
+            <a-entity
             position="-1.1 0 -10"
-            radius="0.2"
-            metalness="0.5"
-            color="#fcefb4"
-            animation="property: position; dir: alternate;to: -1.1 0.5 -10; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
-            <a-sphere
+            scale="0.7 0.7 0.7"
+            gltf-model="assets/sparkle_emoji_3d/scene.gltf"
+            animation="property:rotation; dir: alternate; to: 0 360 0; dur: 8500; loop: true"></a-entity>
+            <a-entity
             position="-1.5 0.5 -10"
-            radius="0.05"
-            metalness="0.5"
-            color="#fcefb4"
-            animation="property: position; dir: alternate;to: -1.5 0 -10; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
-            <a-sphere
+            scale="0.35 0.35 0.35"
+            gltf-model="assets/sparkle_emoji_3d/scene.gltf"
+            animation="property:rotation; dir: alternate; to: 0 -360 0; dur: 8000; loop: true"></a-entity>
+            <a-entity
             position="0 0.5 -8"
-            radius="0.08"
-            metalness="0.5"
-            color="#fcefb4"
-            animation="property: position; dir: alternate;to: 0 0 -8; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
-            <a-sphere
+            scale="0.5 0.5 0.5"
+            gltf-model="assets/sparkle_emoji_3d/scene.gltf"
+            animation="property:rotation; dir: alternate; to: 0 280 0; dur: 6500; loop: true"></a-entity>
+            <a-entity
             position="1.5 1 -8"
-            radius="0.09"
-            metalness="0.5"
-            color="#fcefb4"
-            animation="property: position; dir: alternate;to: 1.5 1.5 -8; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
-            <a-sphere
+            scale="0.25 0.25 0.25"
+            gltf-model="assets/sparkle_emoji_3d/scene.gltf"
+            animation="property:rotation; dir: alternate; to: 0 -360 0; dur: 6900; loop: true"></a-entity>
+            <a-entity
             position="0.5 1.5 -12"
-            radius="0.1"
-            metalness="0.5"
-            color="#fcefb4"
-            animation="property: position; dir: alternate;to: 0.5 1 -12; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
-            <a-sphere
+            scale="0.79 0.79 0.79"
+            gltf-model="assets/sparkle_emoji_3d/scene.gltf"
+            animation="property:rotation; dir: alternate; to: 0 180 0; dur: 7500; loop: true"></a-entity>
+            <a-entity
             position="1.05 -0.5 -11"
-            radius="0.07"
-            metalness="0.5"
-            color="#fcefb4"
-            animation="property: position; dir: alternate;to: 1.05 0 -11; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
+            scale="0.5 0.5 0.5"
+            gltf-model="assets/sparkle_emoji_3d/scene.gltf"
+            animation="property:rotation; dir: alternate; to: 0 360 0; dur: 8000; loop: true"></a-entity>
+            <a-entity
+            position="1.05 -0.5 -11"
+            scale="0.55 0.55 0.55"
+            gltf-model="assets/sparkle_emoji_3d/scene.gltf"
+            animation="property:rotation; dir: alternate; to: 0 -250 0; dur: 5600; loop: true"></a-entity>         
+   
+            <!-- Facto -->
             <a-text id="fact"
             value="Click Space"
-            opacity="0.5"
-            position="0 0.3 -8"
+            opacity="1"
+            position="0 0.5 -5"
+            scale="0.65 0.65 0.65"
             align="center"
-            color="black"></a-text>
+            color="white"></a-text>
+            
         </a-marker-camera>
         
     </a-scene>

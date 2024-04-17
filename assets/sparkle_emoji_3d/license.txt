@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sparkle Emoji 3D
+* source:	https://sketchfab.com/3d-models/sparkle-emoji-3d-cc036a641f99490e95bde0098c85ab29
+* author:	Azterisk (https://sketchfab.com/azterisk)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sparkle Emoji 3D" (https://sketchfab.com/3d-models/sparkle-emoji-3d-cc036a641f99490e95bde0098c85ab29) by Azterisk (https://sketchfab.com/azterisk) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -14,9 +14,12 @@ async function getFact(){
     const data = await response.json()
 
     fact = data.text
-    
     document.querySelector("#fact").setAttribute("value", fact)
-        
+    
+    // if(fact.length < 150){
+    //     document.querySelector("#fact").setAttribute("value", fact)
+    // }
+         
 }
 
 document.body.onkeyup = function(e){
@@ -28,17 +31,25 @@ document.body.onkeyup = function(e){
 document.body.addEventListener('touchstart', function(e){
     
     getFact()  
-    document.querySelector("#fact").setAttribute("animation",{
-        property: "opacity",
-        dir: "alternate",
-        to: 1,
-        dur: 3000,
-        easing: "easeInOutSine",
-        loop: false
-    })
-    console.log(fact);
+    
+    // document.querySelector("#fact").setAttribute("animation",{
+    //     property: "opacity",
+    //     dir: "alternate",
+    //     to: 1,
+    //     dur: 3000,
+    //     easing: "easeInOutSine",
+    //     loop: false
+    // })
+    // console.log(fact);
 })
 
+
+console.log(document.querySelector("#fact").getAttribute("opacity"));
+
+// else if(document.querySelector("#fact").getAttribute("opacity")>0){
+//     opacity = document.querySelector("#fact").getAttribute("opacity") + 0.1
+//     document.querySelector("#fact").setAttribute("opacity", opacity)
+// }
 // setInterval(function(){
 //     let pZ = document.querySelector("a-camera").object3D.position.z - 5
 //     document.querySelector("#fact").setAttribute("position", `0 0.3 ${pZ}`)
