@@ -3,18 +3,14 @@ let fact
 let w = window.innerWidth 
 let h = window.innerHeight
 
-if(w > 1000){
-    document.querySelector("body").style = `margin: ${h}px; overflow: hidden; width: ${w* 3/5}px; height: ${h*4/5}px;`
-}else{
-    document.querySelector("body").style = `margin-top: 0px; overflow: hidden; width: ${w*1.5}px; height: ${h}px;`
-}
+let factTxt = document.querySelector('#fact')
 
 async function getFact(){
     const response = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random?language=en")
     const data = await response.json()
 
     fact = data.text
-    document.querySelector("#fact").setAttribute("value", fact)
+    factTxt.setAttribute("value", fact)
     
     // if(fact.length < 150){
     //     document.querySelector("#fact").setAttribute("value", fact)
@@ -42,7 +38,6 @@ document.body.addEventListener('touchstart', function(e){
     // })
     // console.log(fact);
 })
-
 
 console.log(document.querySelector("#fact").getAttribute("opacity"));
 
