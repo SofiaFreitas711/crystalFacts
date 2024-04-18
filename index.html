@@ -10,7 +10,7 @@
 </head>
 <body style="margin: 0px; overflow: hidden;">
     <a-scene embedded arjs>
-        <a-marker-camera  type='pattern' url='pattern-Design sem nome (1).patt'>
+        <a-marker-camera  preset="hiro">
             <!-- Bola de cristal -->
             <a-sphere
             position="0 0 -10"
@@ -22,7 +22,6 @@
             animation="property: position; dir: alternate;to: 0 0.2 -10; dur: 2000; easing: easeInOutSine; loop: true"></a-sphere>
             
             <!-- Brilhos -->
-            <!-- animation="property: position; dir: alternate;to: -1.1 0.5 -10; dur: 2000; easing: easeInOutSine; loop: true" -->
             <!-- "Sparkle Emoji 3D" (https://skfb.ly/oROzE) by Azterisk is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
             <a-entity
             position="-1.1 0 -10"
@@ -62,7 +61,7 @@
    
             <!-- Facto -->
             <a-text id="fact"
-            value="Click Space"
+            value="PRESS ME AND SEE CRYSTAL FACTS"
             opacity="1"
             position="0 0.5 -5"
             scale="0.65 0.65 0.65"
